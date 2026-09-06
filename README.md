@@ -12,6 +12,17 @@ saved, when recording starts, and when recording stops. It never takes keyboard 
 ![Recording stopped](images/recording_stopped.png)
 ![Recording started](images/recording_started.png)
 
+# A real person writing this
+Hey, so I pretty much threw this into claude for the specific scenario of having a notification pop up when I saved a Replay Buffer in OBS.
+
+I have not tested anything else, and have zero faith that the other parts decribed below worked.
+
+However, I can confirm that for me, the replay buffer notification does appear when I save a clip.
+
+Also, f*** AMD's software, it's the worst I've ever used.
+
+Jun
+
 ## Requirements
 
 | | |
