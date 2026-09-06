@@ -1,0 +1,19 @@
+# Python bytecode (OBS writes this next to the script)
+__pycache__/
+*.pyc
+*.pyo
+
+# Test harness output
+tests/results.txt
+tests/*.png
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Never commit a Python runtime
+*.zip
+*.rar
+*.7z
