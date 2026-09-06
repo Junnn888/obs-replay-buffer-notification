@@ -81,27 +81,6 @@ did not:
 | No settings | Duration, corner, per-event toggles, file name, test button |
 | Shipped a 3.6.8 embeddable Python archive that cannot contain tkinter | Points at the standard python.org installer |
 
-The tests folder contains a stubbed `obspython` module and a driver that reproduces each of these scenarios
-outside OBS.
-
-## Running the tests
-
-They need a Python with tkinter and pop a real window on screen for a few seconds per scenario.
-
-```bash
-cd tests
-for s in a b c d e f g obs28 h; do python driver.py $s; echo "exit=$?"; done
-```
-
-Every scenario should exit 0. Scenario `h` checks that the foreground window never changes.
-
-## Known limits
-
-- Windows only. The no-activate style and the transparent margin use Win32 features.
-- The popup always uses the primary monitor.
-- Not tested with OBS's Qt event loop on anything other than the setups listed above. Please open an issue with
-  your OBS log if it misbehaves.
-
 ## License
 
 MIT, see [LICENSE](LICENSE). The original repository this is based on did not include a license file; attribution
